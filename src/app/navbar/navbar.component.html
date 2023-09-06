@@ -1,0 +1,76 @@
+<mat-toolbar class="toolbar">
+    <span routerLink=""  style="border-radius: 10%; cursor: pointer;"><img mat-card-image src="./assets/prodev.png"
+        style="height: 70px; width: 200px;  "></span>
+    <div style="margin-left:40%;">
+      <button mat-button>
+        <h2>Home</h2>
+      </button>
+      <button  style="margin-left: 10%; ;" mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger"
+        (mouseenter)="openResourceMenu(); recheckIfInMenu = true"
+        (mouseleave)="closeResourceMenu(); recheckIfInMenu = false">
+        <h2>Services</h2>
+      </button>
+      <mat-menu style="margin-top: 200px;" class="custom-class" #menu="matMenu" [overlapTrigger]="false">
+        <span (mouseenter)="recheckIfInMenu = true" (mouseleave)="closeResourceMenu(); recheckIfInMenu = false" >
+          <button  mat-menu-item routerLink="/service">
+            Cloud Services
+          </button>
+          <button mat-menu-item>
+            ETL Learning
+          </button>
+          <button mat-menu-item>
+            Web Development
+          </button>
+        </span>
+      </mat-menu>
+
+
+      <button style="margin-left: 10%;" mat-button [matMenuTriggerFor]="portfolio" #menuPTrigger="matMenuTrigger"
+        (mouseenter)="openPortfolioMenu(); recheckIfInPMenu = true"
+        (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+        <h2>Portfolio</h2>
+      </button>
+      <mat-menu class="custom-class" #portfolio="matMenu" [overlapTrigger]="false">
+        <span (mouseenter)="recheckIfInPMenu = true" (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+          <button [matMenuTriggerFor]="business" mat-menu-item>
+            Business Vertical
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="technology" mat-menu-item>
+            Technology
+          </button>
+
+        </span>
+      </mat-menu>
+
+      <mat-menu class="custom-class" #business="matMenu">
+        <span (mouseenter)="recheckIfInPMenu = true" (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+          <button mat-menu-item>
+            HealthCare
+          </button>
+          <button mat-menu-item>
+            Finance
+          </button></span>
+      </mat-menu>
+      <mat-menu class="custom-class" #technology="matMenu">
+        <span (mouseenter)="recheckIfInPMenu = true" (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+          <button mat-menu-item>
+            Java
+          </button>
+          <button mat-menu-item>
+            Python
+          </button>
+          <button mat-menu-item>
+            Javascript
+          </button>
+        </span>
+      </mat-menu>
+
+      <button style="margin-left: 10%;" mat-button>
+        <h2>Blog</h2>
+      </button>
+
+      <button style="margin-left: 10%;" mat-button>
+        <h2>Contact Us</h2>
+      </button>
+    </div>
+  </mat-toolbar>

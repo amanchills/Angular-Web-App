@@ -1,0 +1,17 @@
+.toolbar{
+    width: 100%;
+    position: relative;
+    background-color: #b5b5e6;
+    filter: brightness(1.1);
+  }
+  .mat-menu-panel.ng-trigger {
+    background: transparent;
+    background-color: #b5b5e6;
+    min-width: 1%;
+    min-height: 1%;
+  }
+  ::ng-deep 
+    .mat-button-ripple {
+      display: none !important;
+    }
+  

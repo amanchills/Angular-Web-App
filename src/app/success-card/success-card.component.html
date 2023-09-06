@@ -1,0 +1,62 @@
+<!-- <div class="card">
+    <div class="card-content card-front">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80" alt="Dog" />
+      <div class="card-body">
+        <h3>Dog fact</h3>
+        <p> Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.</p>
+      </div>
+    </div>
+    
+    <div class="card-content card-back">
+      <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="Cat" />
+      <div class="card-body">
+        <h3>Cat fact</h3>
+        <p>Cats can be lethal hunters and very sneaky, when they walk their back paws step almost exactly in the same place as the front paws did beforehand, this keeps noise to a minimum and limits visible tracks.</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card-container">
+    <div class="box">
+    <div class="card">
+      <div class="card-front">
+        <br>
+        <!-- <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="background" class="card-img"> -->
+        <ngb-carousel style="margin-top: -22px;">
+            <ng-template  ngbSlide *ngFor="let event of previewList">
+                <img style="border-radius:10% ;" [style]="cardSize" [src]="event" >
+            </ng-template>
+        </ngb-carousel>
+      </div>
+      <div class="card-back">
+        <ul class="card-text">
+          <li>hello</li>
+          <li>twice</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="card-container">
+    <div class="box">
+    <div class="card">
+      <div class="card-front c2f">
+        <!-- <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="background" class="card-img"> -->
+        <ul class="card-text">
+          <li>React | Redux</li>
+          <li>NodeJS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="card-back c2b">
+        <ul class="card-text">
+          <li>hello</li>
+          <li>twice</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  </div>

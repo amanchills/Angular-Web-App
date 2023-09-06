@@ -1,0 +1,18 @@
+.contact{
+    background-color: rgb(57, 70, 80);
+    height: 30%;
+    width: 100%;
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: rgb(245, 52, 52);
+    border-radius: 5px;
+  }
+
+  .formDet{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 30%;
+
+  }

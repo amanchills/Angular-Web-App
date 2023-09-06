@@ -1,0 +1,129 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: rgb(250, 224, 30);
+  }
+  
+  .card-container {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+   
+  }
+  
+  .box {
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 375px;
+    height: 250px;
+    border: 4px solid black;
+    margin-top: 50px;
+    border-radius: 2px;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.75);
+    transform-style: preserve-3d;
+    transition: 1s ease;
+    border-radius: 10%;
+  }
+  
+  .box:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front{
+    box-shadow:  14px 10px 6px #A3AEC2, 
+    20px 15px 5px #A3AEC2;
+    border-radius: 10%;
+    background-color: #b6e7a4;
+  }
+  .card-back {
+    box-shadow:  14px 10px 6px #A3AEC2, 
+    20px 15px 5px #A3AEC2;
+    border-radius: 10%;
+    background: #b5b5e6;
+    transform: rotateY(180deg);
+  }
+  
+  .card-text {
+    list-style: none;
+    margin: 20px 50px 0px 50px;
+    line-height: 40px;
+  }
+  
+  .card-text li:not(:last-child) {
+    border-bottom: 1px solid #0004;
+  }
+  
+  .card-img {
+    height: 150px;
+    width: 268px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .card-front:nth-child(1) {
+    animation: fadeIn 1.5s 0.3s backwards;
+  }
+  
+  .card-front:nth-child(2) {
+    animation: fadeIn 1.5s 0.6s backwards;
+  }
+  .card-front:nth-child(3) {
+    animation: fadeIn 1.5s 0.9s backwards;
+  }
+  .card-front:nth-child(4) {
+    animation: fadeIn 2s 1.2s backwards;
+  }
+  .card-front:nth-child(5) {
+    animation: fadeIn 2s 1.5s backwards;
+  }
+  .card-front:nth-child(6) {
+    animation: fadeIn 2s 1.8s backwards;
+  }
+  .c2f{
+    background-color: #b5b5e6;
+  }
+  .c2b{
+    background-color:#b6e7a4;
+  }
+  
+
+  .carousel-control-prev
+  {
+
+display: none!important;
+  }
+.carousel-control-next {
+   
+      display: none;
+      margin-bottom: 50px;
+  }

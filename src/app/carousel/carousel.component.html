@@ -1,0 +1,7 @@
+<div class="carousel">
+<ngb-carousel #myCarousel="ngbCarousel">
+    <ng-template style="height: 50px;"  ngbSlide *ngFor="let event of previewList">
+        <img [style]="size" [src]="event" >
+    </ng-template>
+</ngb-carousel>
+</div>

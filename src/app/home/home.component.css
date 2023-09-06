@@ -1,0 +1,56 @@
+
+
+  ngb-carousel .wrapper {
+    /* position: relative; */
+    height: 300px;
+    width: 1500px !important; 
+  
+  }
+  
+  ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%
+  }
+
+  .app-presentation {
+    height: 200px !important;
+    width: 200px;
+    transform: scale(0.5);
+
+  }
+
+  #heading{
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 4%;
+  }
+
+  #headingFont{
+    color: white;
+    font-style: italic;
+    font-family:cursive;
+    text-shadow: 1.5px 1.5px #b5b5e6;;
+  }
+
+
+  h2{
+    font-family:cursive;
+  }
+.app-success-card{
+  margin-top: 8%
+}
+
+
+
+::ng-deep .custom-class{
+  background-color: green!important;
+}
+
+mat-menu-item{
+  background-color: green!important;
+}

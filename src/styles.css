@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.cdk-overlay-container{
+    top:67px;
+}
+.cdk-overlay-connected-position-bounding-box{
+    top:0 !important;
+    
+}
+
+.custom-tooltip {
+    background-color:rgb(221, 69, 69);
+    height: 200px;
+    width: 200px;
+    color: #000 !important;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgb(28 28 28 / 35%);
+  }
+  .custom-class{
+    background-color:#b5b5e6;
+  }
+  .mat-ripple-element {
+    transition-duration: 0ms !important;
+  }
+  .mat-ripple { display: none; }

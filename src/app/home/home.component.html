@@ -1,0 +1,122 @@
+<div style=" background-image:url(./assets/blackg.jpg); height: 2000px; width:100%">
+
+    <!-- <mat-toolbar class="toolbar">
+      <span style="border-radius: 10%;"><img mat-card-image src="./assets/prodev.png"
+          style="height: 70px; width: 200px;  "></span>
+      <div style="margin-left:40%;">
+        <button mat-button>
+          <h2>Home</h2>
+        </button>
+        <button style="margin-left: 10%;" mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger"
+          (mouseenter)="openResourceMenu(); recheckIfInMenu = true"
+          (mouseleave)="closeResourceMenu(); recheckIfInMenu = false">
+          <h2>Services</h2>
+        </button>
+        <mat-menu class="custom-class" #menu="matMenu" [overlapTrigger]="false">
+          <span (mouseenter)="recheckIfInMenu = true" (mouseleave)="closeResourceMenu(); recheckIfInMenu = false" >
+            <button style="background-color:aquamarine ;" mat-menu-item>
+              Cloud Services
+            </button>
+            <button mat-menu-item>
+              ETL Learning
+            </button>
+            <button mat-menu-item>
+              Web Development
+            </button>
+          </span>
+        </mat-menu>
+
+
+        <button style="margin-left: 10%;" mat-button [matMenuTriggerFor]="portfolio" #menuPTrigger="matMenuTrigger"
+          (mouseenter)="openPortfolioMenu(); recheckIfInPMenu = true"
+          (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+          <h2>Portfolio</h2>
+        </button>
+        <mat-menu #portfolio="matMenu" [overlapTrigger]="false">
+          <span (mouseenter)="recheckIfInPMenu = true" (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+            <button [matMenuTriggerFor]="business" mat-menu-item>
+              Business Vertical
+            </button>
+            <button mat-menu-item [matMenuTriggerFor]="technology" mat-menu-item>
+              Technology
+            </button>
+
+          </span>
+        </mat-menu>
+
+        <mat-menu #business="matMenu">
+          <span (mouseenter)="recheckIfInPMenu = true" (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+            <button mat-menu-item>
+              HealthCare
+            </button>
+            <button mat-menu-item>
+              Finance
+            </button></span>
+        </mat-menu>
+        <mat-menu #technology="matMenu">
+          <span (mouseenter)="recheckIfInPMenu = true" (mouseleave)="closePortfolioMenu(); recheckIfInPMenu = false">
+            <button mat-menu-item>
+              Java
+            </button>
+            <button mat-menu-item>
+              Python
+            </button>
+            <button mat-menu-item>
+              Javascript
+            </button>
+          </span>
+        </mat-menu>
+
+        <button style="margin-left: 10%;" mat-button>
+          <h2>Blog</h2>
+        </button>
+
+        <button style="margin-left: 10%;" mat-button>
+          <h2>Contact Us</h2>
+        </button>
+      </div>
+    </mat-toolbar> -->
+<app-navbar></app-navbar>
+
+    <br>
+ 
+    <marquee direction="left"
+      style="border-radius:30px;font-family: Rajdhani, sans-serif; color: black; width: 80%; background-color: #b5b5e6;"
+      scrolldelay="100" behavior="loop" hspace="10%">
+      <span style="color:black;margin-right:200px;font-family:cursive ;">{{newsFeed}}</span>
+      <span style="color:black;margin-right:200px;font-family:cursive ;" >{{newsFeed2}}</span>
+    </marquee>
+<br>
+<br>
+
+
+  <app-carousel [previewList]="previewList" [size]="previewSize" ></app-carousel>
+  <div id="heading">
+    <h1 id="headingFont">Digital and technology services are the architects of tomorrow's possibilities, crafting the
+      bridge between imagination and reality.</h1>
+  </div>
+  <div style="display:flex; justify-content: space-between; margin-left: 10%; margin-right: 10%;">
+    <div class="app-presentation"></div>
+    <div class="app-success-card"> </div>
+
+  </div>
+
+  <br><br><br>
+  <br><br><br>
+  <marquee direction="left"
+  style=" border-width: 10px; border-color: white; width: 100%; height: 250px; background-color:black; "
+  scrolldelay="0" behavior="Alternate">
+  <br>
+
+  <span ><img src="./assets/aws.png" style="height:200px ; width:250px" alt=""></span>
+  <span  ><img src="./assets/kub.png" style="height:200px ; width:250px" alt=""></span>
+  <span  ><img src="./assets/snow.png" style="height:200px ; width:250px" alt=""></span>
+  <span  ><img src="./assets/reacts.png" style="height:200px ; width:300px" alt=""></span>
+  <span  ><img src="./assets/doc.png" style="height:150px ; width:200px" alt=""></span>
+
+  
+</marquee>
+  
+<!-- <div class="app-contact-us"></div> -->
+<app-contact-us ></app-contact-us>
+</div>

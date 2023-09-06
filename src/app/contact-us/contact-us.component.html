@@ -1,0 +1,62 @@
+<div class="contact">
+    <h1
+        style="color: white; font-famly:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align:center">
+        Contact Us</h1>
+    <br>
+    <div class="formDet">
+        <mat-form-field appearance="outline" style="width: 45% ;">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="fName" required>
+            <mat-error *ngIf="fName.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <div style="width:10% ;"></div>
+        <mat-form-field appearance="outline" style="width: 45% ;">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="lName">
+
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline" style="width: 45% ;">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <div style="width: 10%;"></div>
+
+        <mat-form-field appearance="outline" style="width: 45% ;">
+            <mat-label>Mobile No</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="mobileNo" required>
+            <mat-error *ngIf="mobileNo.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 45% ;">
+            <mat-label>Organisation Name</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="orgName" required>
+            <mat-error *ngIf="orgName.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <div style="width: 10%;"></div>
+
+        <mat-form-field appearance="outline" style="width: 45% ;">
+            <mat-label>Request Type</mat-label>
+            <select matNativeControl [(ngModel)]="requestType" name="car">
+                <option value="" selected></option>
+                <option *ngFor="let i of requestTypeList" [value]="i">
+                    {{i}}
+                </option>
+            </select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100% ;">
+            <mat-label>Request description</mat-label>
+            <textarea matInput placeholder="pat@example.com" [formControl]="desc" required></textarea>
+            <!-- <mat-error *ngIf="orgName.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+        <mat-checkbox class="example-margin" [(ngModel)]="checked">By registering you consent to the collection and use
+            of your personal data as per Tavant’s Privacy Notice</mat-checkbox>
+        <div style="width: 85%;"></div>
+        <button mat-stroked-button>Submit</button>
+    </div>
+    <br><br><br>
+
+
+</div>
